@@ -1,4 +1,3 @@
-package ___Ejer_Corregido;  ///original
 
 public class Rectangulo {
 	private Coordenada esquina1;
