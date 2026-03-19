@@ -1,4 +1,3 @@
-package ___Ejer_Corregido; //original
 
 public class Verificador {
 	public static boolean esSobrePos(Rectangulo r1, Rectangulo r2) {
