@@ -1,4 +1,3 @@
-package ___Ejer_Corregido;  ///Original
 
 public class Coordenada {
 	private double x;
