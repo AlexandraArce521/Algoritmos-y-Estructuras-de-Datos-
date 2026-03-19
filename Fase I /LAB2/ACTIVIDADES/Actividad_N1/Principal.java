@@ -45,3 +45,40 @@ public class Principal {
 	}
 }
 //*
+
+import java.util.ArrayList;
+
+public class Caja <T>{
+	private String color;
+	private ArrayList<T> lista = new ArrayList<T>();
+	
+	public Caja(String color) {
+		this.setColor(color);
+	}
+	
+	public void add(T objeto) {
+	    lista.add(objeto);
+	}
+	
+	public void mostrar() {
+	    for(T e: lista) {
+	        System.out.print("\n" + e + " ");
+	    }
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public ArrayList<T> getCaja() {
+		return lista;
+	}
+
+	public void setCaja(ArrayList<T> caja) {
+		this.lista = lista;
+	}
+}
