@@ -1,4 +1,4 @@
-package ___Ejerciio1_algoritmia;
+
 
 public class ContainerRect {
 	private Rectangulo[] rectangulos;
