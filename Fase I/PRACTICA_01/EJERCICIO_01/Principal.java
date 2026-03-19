@@ -1,4 +1,3 @@
-package ___Ejerciio1_algoritmia;
 
 import java.util.Scanner;
 
