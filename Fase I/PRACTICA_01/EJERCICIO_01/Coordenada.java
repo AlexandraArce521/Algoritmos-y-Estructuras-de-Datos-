@@ -1,4 +1,3 @@
-package ___Ejerciio1_algoritmia;
 
 public class Coordenada {
 	private double x;
