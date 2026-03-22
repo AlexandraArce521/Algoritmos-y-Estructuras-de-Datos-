@@ -2,7 +2,7 @@
 public class Principal {
 
 	public static void main(String[] args) {
-	
+		/*
 		//Laptop
         Laptop l1 = new Laptop("Dell", 65, 55, 56);
         Laptop l2 = new Laptop("Dell", 65, 30, 56);
@@ -48,6 +48,36 @@ public class Principal {
         } else {
             System.out.println("s1 es igual a null -> FALSE");
         }
+        */
+		
+		
+        //Prueba estacion de carga
+
+        PowerStation<Smartphone> estacion = new PowerStation<>(3);
+
+        Smartphone s1 = new Smartphone("Samsung S21", 15, 0);
+        Smartphone s2 = new Smartphone("iPhone 13", 20, 0);
+        Smartphone s3 = new Smartphone("Xiaomi Mi 11", 18, 0);
+
+        // Conectar dispositivos
+        estacion.conectar(s1);
+        estacion.conectar(s2);
+        estacion.conectar(s3);
+
+        // Mostrar reporte (posiciones 0,1,2)
+        estacion.mostrarReporte();
+
+        // Calcular consumo total
+        System.out.println("Consumo total: " + estacion.calcularConsumo());
+
+        // Buscar dispositivo existente (TRUE)
+        Smartphone buscado1 = new Smartphone("Samsung S21", 15, 0);
+        estacion.buscarDispositivo(buscado1);
+
+        // Buscar dispositivo inexistente (FALSE)
+        Smartphone buscado2 = new Smartphone("Huawei P30", 22, 0);
+        estacion.buscarDispositivo(buscado2);
+        
 	} 
 
 }
