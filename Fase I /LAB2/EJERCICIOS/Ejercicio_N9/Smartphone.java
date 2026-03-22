@@ -54,16 +54,18 @@ public class Smartphone implements Cargable {
 		}
 	}
 	
-	public boolean equals(Smartphone otraCelular) { // Se comprueba si la marca y los vatios son iguales
-		if (this == otraCelular) {
+	@Override
+	public boolean equals(Object obj) { // Se comprueba si la marca y los vatios son iguales
+		if (this == obj) {
 			return true;
 		}
 		
-		if(otraCelular == null || getClass() != otraCelular.getClass()) {
+		if(obj == null || getClass() != obj.getClass()) {
 			return false;
 		}
 		
-		if(this.vatios == otraCelular.vatios && this.modelo.equals(otraCelular.modelo)){
+		Smartphone otroCelular = (Smartphone) obj;
+		if(this.vatios == otroCelular.getVatios() && this.modelo.equals(otroCelular.getModelo())){
 			return true;
 		}
 		return false;
@@ -74,4 +76,3 @@ public class Smartphone implements Cargable {
 	}
 
 }
-
