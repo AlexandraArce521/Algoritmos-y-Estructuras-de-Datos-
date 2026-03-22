@@ -54,17 +54,19 @@ public class Laptop implements Cargable {
 			}
 		}
 	}
-
-	public boolean equals(Laptop otraLaptop) { // Se comprueba si la marca y los vatios son iguales
-		if (this == otraLaptop) {
+	
+	@Override
+	public boolean equals(Object obj) { // Se comprueba si la marca y los vatios son iguales
+		if (this == obj) {
 			return true;
 		}
 		
-		if(otraLaptop == null || getClass() != otraLaptop.getClass()) {
+		if(obj == null || getClass() != obj.getClass()) {
 			return false;
 		}
 		
-		if(this.vatios == otraLaptop.vatios && this.marca.equals(otraLaptop.marca)){
+		Laptop otraCelular = (Laptop) obj;
+		if(this.vatios == otraCelular.getVatios() && this.marca == otraCelular.getMarca()){
 			return true;
 		}
 		return false;
