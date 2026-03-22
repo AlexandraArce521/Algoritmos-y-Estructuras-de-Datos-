@@ -37,7 +37,7 @@ public class Smartphone implements Cargable {
 	}
 	
 	public double getConsumoVatios() {
-		return 0.8;
+		return vatios;
 	}
 	
 	//No tendra set porque no se puede cambiar por el usuario
@@ -54,8 +54,24 @@ public class Smartphone implements Cargable {
 		}
 	}
 	
+	public boolean equals(Smartphone otraCelular) { // Se comprueba si la marca y los vatios son iguales
+		if (this == otraCelular) {
+			return true;
+		}
+		
+		if(otraCelular == null || getClass() != otraCelular.getClass()) {
+			return false;
+		}
+		
+		if(this.vatios == otraCelular.vatios && this.modelo.equals(otraCelular.modelo)){
+			return true;
+		}
+		return false;
+	}
+	
 	public void mostrarEstado() {
 		System.out.println("Nivel de bateria: " + nivelBateria +"%\n");
 	}
 
 }
+
