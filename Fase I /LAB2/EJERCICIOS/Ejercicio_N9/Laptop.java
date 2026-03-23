@@ -61,7 +61,7 @@ public class Laptop implements Cargable {
 			return true;
 		}
 		
-		if(obj == null || getClass() != obj.getClass()) {
+		if(obj == null || getClass() != obj.getClass()) {  // Verificar si el objeto es nulo o no es de la misma clase
 			return false;
 		}
 		
