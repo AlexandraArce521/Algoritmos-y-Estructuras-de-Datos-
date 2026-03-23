@@ -65,7 +65,7 @@ public class Laptop implements Cargable {
 			return false;
 		}
 		
-		Laptop otraCelular = (Laptop) obj;
+		Laptop otraCelular = (Laptop) obj; // Realizar el casting seguro y comparar los vatios y marca de las laptops
 		if(this.vatios == otraCelular.getVatios() && this.marca == otraCelular.getMarca()){
 			return true;
 		}
