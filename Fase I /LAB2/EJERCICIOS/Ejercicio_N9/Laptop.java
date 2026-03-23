@@ -57,7 +57,7 @@ public class Laptop implements Cargable {
 	
 	@Override
 	public boolean equals(Object obj) { // Se comprueba si la marca y los vatios son iguales
-		if (this == obj) {
+		if (this == obj) { // Verificar si es el mismo objeto
 			return true;
 		}
 		
