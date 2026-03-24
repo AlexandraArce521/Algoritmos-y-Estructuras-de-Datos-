@@ -17,10 +17,6 @@ public class Bolsa<T> implements Iterable<T> {
         }
     }
 
-    public Iterator<T> iterador() {
-        return bolsa.iterator();
-    }
-
     @Override
     public Iterator<T> iterator() {
         return bolsa.iterator();
