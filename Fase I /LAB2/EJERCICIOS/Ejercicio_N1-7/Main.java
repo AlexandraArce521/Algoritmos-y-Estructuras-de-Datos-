@@ -1,12 +1,13 @@
 public class Main {
-	public static <T> boolean exist(T[] arreglo, T elemento) {
-	    for (int i = 0; i < arreglo.length; i++) {
-	        if (arreglo[i].equals(elemento)) {
-	            return true;
-	        }
-	    }
-	    return false;
-	}
+    public static <T> boolean exist(Iterable<T> arreglo, T elemento) {
+        for (T e : arreglo) {
+            if (e.equals(elemento)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
 	public static void main(String[] args) {
 		Chocolatina c1 = new Chocolatina("milka");
 		Chocolatina c2 = new Chocolatina("Carmelo");
@@ -55,6 +56,38 @@ public class Main {
 		System.out.println("Cantidad de chocol: " + cajoneriaC.contar(c3));
 		System.out.println(cajoneriaC.delete(c1));
 		System.out.println(cajoneriaC);
+		
+		//Implementar un método genérico que permita dar solución a lo planteado en la séptima actividad. 
+		Bolsa <Chocolatina> bolsaCho = new Bolsa <Chocolatina> (5); 
+		bolsaCho.add(c1);
+		bolsaCho.add(c2);
+		bolsaCho.add(c3);
+		bolsaCho.add(c4);
+		bolsaCho.add(c5);
+		
+		
+		System.out.println("\nChocolatinas\n_____________________"); 
+
+		for (Chocolatina chocolatina: bolsaCho) { 
+		    System.out.println(chocolatina.getMarca()); 
+		} 
+		
+		Bolsa <Golosina> bolsaGolo = new Bolsa <Golosina> (5);
+		bolsaGolo.add(g1);
+		bolsaGolo.add(g2);
+		bolsaGolo.add(g3);
+		bolsaGolo.add(g4);
+		bolsaGolo.add(g5);
+
+		System.out.println("\nGolosinas\n_____________________"); 
+		
+		for (Golosina golosina: bolsaGolo) { 
+		    System.out.println(golosina.getNombre()); 
+		} 
+		
+		//Probar su funcionamiento con arreglos que almacenen objetos Golosina y objetos Chocolatina. 
+		System.out.println("\n¿El objeto g2 esta en el arreglo de Golosinas?: " + exist(bolsaGolo, g2)); 
+		
 		
 	}
 }
