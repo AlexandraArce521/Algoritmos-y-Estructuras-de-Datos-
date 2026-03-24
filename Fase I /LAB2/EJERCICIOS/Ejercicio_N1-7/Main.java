@@ -1,4 +1,12 @@
 public class Main {
+	public static <T> boolean exist(T[] arreglo, T elemento) {
+	    for (int i = 0; i < arreglo.length; i++) {
+	        if (arreglo[i].equals(elemento)) {
+	            return true;
+	        }
+	    }
+	    return false;
+	}
 	public static void main(String[] args) {
 		Chocolatina c1 = new Chocolatina("milka");
 		Chocolatina c2 = new Chocolatina("Carmelo");
