@@ -56,20 +56,24 @@ public class Laptop implements Cargable {
 	}
 	
 	@Override
-	public boolean equals(Object obj) { // Se comprueba si la marca y los vatios son iguales
-		if (this == obj) { // Verificar si es el mismo objeto
-			return true;
-		}
-		
-		if(obj == null || getClass() != obj.getClass()) {  // Verificar si el objeto es nulo o no es de la misma clase
-			return false;
-		}
-		
-		Laptop otraCelular = (Laptop) obj; // Realizar el casting seguro y comparar los vatios y marca de las laptops
-		if(this.vatios == otraCelular.getVatios() && this.marca == otraCelular.getMarca()){
-			return true;
-		}
-		return false;
+	public boolean equals(Object obj) {
+	
+	    if (this == obj) {
+	        return true;
+	    }
+	
+	    if (obj == null || getClass() != obj.getClass()) {
+	        return false;
+	    }
+	
+	    Laptop otraLaptop = (Laptop) obj;
+	
+	    if (this.vatios == otraLaptop.getVatios() &&
+	        Objects.equals(this.marca, otraLaptop.getMarca())) {
+	        return true;
+	    } else {
+	        return false;
+	    }
 	}
 	
 	public void mostrarEstado() {
