@@ -23,7 +23,7 @@ public class Caja<T extends Comparable<T>> {
     }
 
     public ArrayList<T> getLista() {
-        return lista;
+        return this.lista;
     }
 
     @Override
