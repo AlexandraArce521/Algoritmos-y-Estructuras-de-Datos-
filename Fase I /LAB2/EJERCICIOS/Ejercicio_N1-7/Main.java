@@ -57,6 +57,9 @@ public class Main {
 		System.out.println(cajoneriaC.delete(c1));
 		System.out.println(cajoneriaC);
 		
+	    System.out.println("\n\n==============================================="); 
+
+		
 		//Implementar un método genérico que permita dar solución a lo planteado en la séptima actividad. 
 		Bolsa <Chocolatina> bolsaCho = new Bolsa <Chocolatina> (5); 
 		bolsaCho.add(c1);
@@ -64,6 +67,10 @@ public class Main {
 		bolsaCho.add(c3);
 		bolsaCho.add(c4);
 		bolsaCho.add(c5);
+
+		System.out.println("\nMostrando Bolsa de Chocolatinas\n_____________________"); 
+		
+        Bolsa.mostrarBolsa(bolsaCho);
 		
 		
 		System.out.println("\nChocolatinas\n_____________________"); 
@@ -78,7 +85,12 @@ public class Main {
 		bolsaGolo.add(g3);
 		bolsaGolo.add(g4);
 		bolsaGolo.add(g5);
-
+		
+		
+		System.out.println("\nMostrando Bolsa de Golosinas\n_____________________"); 
+		
+        Bolsa.mostrarBolsa(bolsaGolo);
+        
 		System.out.println("\nGolosinas\n_____________________"); 
 		
 		for (Golosina golosina: bolsaGolo) { 
