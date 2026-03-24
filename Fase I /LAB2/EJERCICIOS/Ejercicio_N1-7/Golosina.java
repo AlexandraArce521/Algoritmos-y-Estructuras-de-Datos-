@@ -1,4 +1,4 @@
-public class Golosina {
+public class Golosina implements Comparable <Golosina> {
 	private String nombre;
 	private double peso;
 	
@@ -36,6 +36,10 @@ public class Golosina {
 		
 		Golosina g = (Golosina) obj;
 		return this.nombre.equals(g.getNombre()) && this.peso == g.getPeso();
+	}
+	@Override 
+	public int compareTo(Golosina otro) {
+		return 0; //Falta
 	}
 	
 	@Override
