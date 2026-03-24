@@ -22,9 +22,4 @@ public class Bolsa<T> implements Iterable<T> {
         return bolsa.iterator();
     }
     
-    public <T> void mostrarBolsa(Iterable<T> bolsa) {
-        for (T elemento : bolsa) {
-            System.out.println(elemento);
-        }
-    }
 }
