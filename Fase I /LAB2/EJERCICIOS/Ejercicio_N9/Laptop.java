@@ -5,10 +5,9 @@ public class Laptop implements Cargable {
 	private int nivelBateria;	
 	
 	
-	public Laptop(String marca, int vatios, int cantidad, int nivelBateria) {
+	public Laptop(String marca, int vatios, int nivelBateria) {
 		this.marca = marca;
 		this.vatios = vatios;
-		this.cantidad = cantidad;
 		this.nivelBateria = nivelBateria;
 	}
 	
