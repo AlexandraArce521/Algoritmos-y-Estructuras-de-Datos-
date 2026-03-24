@@ -1,4 +1,4 @@
-public class Chocolatina {
+public class Chocolatina implements Comparable<Chocolatina> {
 	private String marca;
 	
 	public Chocolatina(String marca) {
@@ -26,6 +26,11 @@ public class Chocolatina {
 		
 		Chocolatina ch = (Chocolatina) obj;
 		return this.marca.equals(ch.getMarca());
+	}
+
+	@Override
+	public int compareTo(Chocolotina otro) {
+		return 0;	 //Falta
 	}
 	
 	@Override
