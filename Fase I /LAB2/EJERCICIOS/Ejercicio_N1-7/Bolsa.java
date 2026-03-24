@@ -17,12 +17,14 @@ public class Bolsa<T> implements Iterable<T> {
         }
     }
 
-    public Iterator<T> iterador() {
-        return bolsa.iterator();
-    }
-
     @Override
     public Iterator<T> iterator() {
         return bolsa.iterator();
+    }
+    
+    public <T> void mostrarBolsa(Iterable<T> bolsa) {
+        for (T elemento : bolsa) {
+            System.out.println(elemento);
+        }
     }
 }
