@@ -3,13 +3,11 @@ public class Smartphone implements Cargable {
 	
 	private String modelo;
 	private int vatios;
-	private int cantidad;
 	private int nivelBateria;
 	
-	public Smartphone(String modelo, int vatios, int cantidad) {
+	public Smartphone(String modelo, int vatios) {
 		this.modelo = modelo;
 		this.vatios = vatios;
-		this.cantidad = cantidad;
 	}
 	
 	public String getModelo() {
@@ -27,14 +25,7 @@ public class Smartphone implements Cargable {
 	public void setVatios(int vatios) {
 		this.vatios = vatios;
 	}
-	
-	public int getCantidad() {
-		return cantidad;
-	}
-	
-	public void setCantidad(int cantidad) {
-		this.cantidad = cantidad;
-	}
+
 	
 	public double getConsumoVatios() {
 		return vatios;
