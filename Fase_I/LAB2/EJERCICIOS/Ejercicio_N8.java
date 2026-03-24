@@ -1,5 +1,5 @@
 
-public class Main {
+public class Intercambio {
 	public static<T> void swap(T[] arreglo, int i, int j) {
 		if(i >= 0 && i < arreglo.length && j >= 0 && j < arreglo.length) {
 			T posicionA = arreglo[i];
