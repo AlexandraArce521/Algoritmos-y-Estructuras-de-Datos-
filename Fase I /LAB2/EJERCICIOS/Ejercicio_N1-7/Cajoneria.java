@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Cajoneria<T> {
+public class Cajoneria<T extends Comparable <T>>{
 	private ArrayList<Caja<T>> caja = new ArrayList<Caja<T>>();
 	private int tope;
 	
