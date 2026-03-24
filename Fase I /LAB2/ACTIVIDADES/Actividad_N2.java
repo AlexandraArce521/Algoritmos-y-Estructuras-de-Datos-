@@ -1,3 +1,5 @@
+//Trabajando con métodos genéricos 
+
 class DemoMetodoGenerico {
     static <T extends Comparable<T>> boolean igualArrays (T[] x, T[] y){
       // Si las longitudes de los arrays son diferentes,
@@ -9,7 +11,7 @@ class DemoMetodoGenerico {
             return false; // arrays diferentes
       return true; // Contenido de arrays son equivalentes
     }
-    public static void main(String[] args) { 
+    public static void main(String[] args) { .
         Integer nums[] = { 1, 2, 3, 4, 5 };
         Integer nums2[] = { 1, 2, 3, 4, 5 };
         Integer nums3[] = { 1, 2, 7, 4, 5 };
