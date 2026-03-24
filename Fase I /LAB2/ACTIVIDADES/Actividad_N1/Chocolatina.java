@@ -6,7 +6,7 @@ public class Chocolatina {
 	}
 
 	public String getMarca() {
-		return marca;
+		return this.marca;
 	}
 
 	public void setMarca(String marca) {
