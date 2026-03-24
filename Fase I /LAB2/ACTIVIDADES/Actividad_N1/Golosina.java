@@ -8,7 +8,7 @@ public class Golosina {
 	}
 
 	public String getNombre() {
-		return nombre;
+		return this.nombre;
 	}
 
 	public void setNombre(String nombre) {
@@ -16,7 +16,7 @@ public class Golosina {
 	}
 
 	public double getPeso() {
-		return peso;
+		return this.peso;
 	}
 
 	public void setPeso(double peso) {
