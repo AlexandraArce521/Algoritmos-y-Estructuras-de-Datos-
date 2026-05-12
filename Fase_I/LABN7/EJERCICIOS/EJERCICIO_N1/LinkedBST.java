@@ -416,7 +416,5 @@ public class LinkedBST<T extends Comparable<T>> implements BinarySearchTree<T> {
 
 		return isValidBSTRec(n.left, min, n.data) && isValidBSTRec(n.right, n.data, max);
 	}
-	//========================================================
-	//FALTA EL MAIN, LO HAGO MAÑANA, EN LA MAÑANA, USO CHAT
-	
+	//========================================================	
 }
